@@ -41,7 +41,7 @@ public class jpaConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder, DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.umg.edu.gt.progra2Library.Model") // Ajusta el paquete según tu estructura
+                .packages("com.umg.edu.gt.progra2Library.Model") 
                 .persistenceUnit("default")
                 .build();
     }
